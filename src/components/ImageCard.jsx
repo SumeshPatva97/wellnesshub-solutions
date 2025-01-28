@@ -1,0 +1,58 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import  First  from "../image/card/1.png";
+import  Second  from "../image/card/2.png";
+import  Third  from "../image/card/3.png";
+import  Fourt  from "../image/card/4.png";
+import  Five  from "../image/card/5.jpeg";
+import  Six  from "../image/card/6.png";
+
+const ImageCard = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
+  const data = [
+    { id: 1, image: First, title: 'Online Psychological Counselling', description: 'Unlocking your potential through Psychologist’s Expert Guidance', link: '/Online-Psychological-Counselling' },
+    { id: 2, image: Second, title: 'Online Speech Therapy for Kids', description: 'Nurturing young voices through Expert Speech Therapy', link: '/Online-Speech-Therapy' },
+    { id: 3, image: Third, title: 'Online Autism Therapy', description: 'Therapy driven by experts for the child’s holistic development', link: '/Online-Autism-Therapy' },
+    { id: 4, image: Fourt, title: 'Online Behavioral Therapy for Kids', description: 'Nurturing young voices through Expert Speech Therapy', link: '/Online-Behavioral-Therapy' },
+    { id: 5, image: Five, title: 'Aphasia Management', description: 'Empowering communication through effective aphasia management strategies', link: '/Aphasia-Management' },
+    { id: 6, image: Six, title: 'Therapy Apps', description: 'Innovative Therapy Apps to empower parents and nurture child’s growth', link: '/Therapy-Apps' },
+  ];
+
+  return (
+    <div className='container ' id="image-container">
+       <div className="row">
+        <div className="image-container ">
+          {data.map((item, index) => (
+            <div
+              className={`image-card ${hoveredIndex === index ? 'hovered' : ''} col-xs-12 col-md-2 image-single`}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+                <Link to={item.link} className="image-link">
+              <div className="image-wrapper">
+                <img src={item.image} alt={item.title} />
+              </div>
+              <div className='image-container-gradient'></div>
+              <div className="content">
+                <h3>{item.title}</h3>
+                {hoveredIndex === index && <p>{item.description}</p>}
+              </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+        </div>
+    </div>
+  );
+};
+
+export default ImageCard;

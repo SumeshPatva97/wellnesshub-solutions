@@ -1,0 +1,96 @@
+{
+  "Header": {
+    "title": "Welcome to Wellnesshub Solutions",
+    "paragraph": "Your one-stop solution for Medicine Delivery, Health & Motor Insurance, Lab Services, and Radiology"
+  },
+  "About": {
+    "heading":"India's Largest Digital Healthcare Platform",
+    "paragraph": "We are India’s fastest growing online healthcare service aggregator with a pan India presence having served 2 Lac+ customers across Medicine delivery, Lab & Diagnostic services, Health & Wellness products, Doctors search platform and allied healthcare services. Callthedoc Healthcare Solutions is a socio-economic initiation undertaken for public service with a vision to empower consumers and Healthcare professional to avail the most appropriate Healthcare service at the best possible price",
+    "Why": [
+      "Commitment to Social Impact",
+      "Pan-India Reach",
+      "Affordability & Transparency"
+    ],
+    "Why2": [
+      "2 Lakh+ Satisfied Customers",
+      "Empowering Consumers & Professionals",
+      "Comprehensive Healthcare Services"
+    ]
+  },
+
+  "Services": [
+    {
+      "icon": "/img/icons/delivery_trans.gif",
+      "title": "Medicine Delivery",
+      "text": "Fast, reliable medicine delivery at your doorstep. Affordable, convenient, and trusted for your health needs!"
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Insurance Health & Motor Insurance",
+      "text": "Comprehensive health and motor insurance plans. Affordable premiums, reliable coverage, and peace of mind guaranteed!"
+    },
+    {
+      "icon": "img/icons/test_trans.gif",
+      "title": "Labs Services",
+      "text": "Accurate, reliable lab services. Fast diagnostics, affordable pricing, advanced technology, and trusted health results!"
+    },
+    {
+      "icon": "img/icons/ct-scan.png",
+      "title": "Radiology",
+      "text": "Advanced radiology services with precise imaging, expert analysis, modern equipment, and trusted diagnostic accuracy!"
+    }
+  ],
+
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "Office No. F-106 Upper, 1 Floor Raghuleela Mega Mall, Kandivali (W) Mumbai 400 067.",
+    "phone": "+19 80979 25586",
+    "email": "wellnesshubsolutions@gmail.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Goals": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
