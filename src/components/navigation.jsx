@@ -1,75 +1,73 @@
 import React from "react";
 import  LogoImage  from "../image/logo.jpeg";
 
+import { FaClock ,FaInstagram,FaFacebookF ,FaDribbble   } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
+import { Navbar, Nav, Container } from "react-bootstrap";
+
 
 const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-          </button>
-          <div className="navLogo">
-          <a className="navbar-brand page-scroll navLogo" href="#page-top">
-            <img src={LogoImage} alt="Logo" className="navLogoImage" />
-          </a>{" "}
-          </div>
-        </div>
+    <>
+   
+ 
+<Navbar bg="light" expand="lg" fixed="top">
+      <Container>
+      {/* <div className="topbar navbar-fixed-top">
+    <div className="container">
+        <div className="row align-items-center">
+            <div className="col-lg-6 col-md-9">
+                <div className="topbar-contact-info">
+                    <ul>
+                        <li><a href="#"><FaClock/>&nbsp;<span>Working Hour:</span>08:00am to 09:00pm</a></li>
+                        <li><a href="#"><MdEmail />&nbsp; <span>Email:</span>wellnesshubsolutions@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#goals" className="page-scroll">
-              Goals
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="page-scroll">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll">
-                Services
-              </a>
-            </li>
-            {/* <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li> */}
-            <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="page-scroll">
-                Contact
-              </a>
-            </li>
-          </ul>
+            <div className="col-lg-6 col-md-3">
+                <div className="topbar-social-details">
+                    <div className="topbar-social-icons">
+                        <ul>
+                            <li><a href="#"><FaInstagram /></a></li>
+                            <li><a href="#"><FaFacebookF /></a></li>
+                            <li><a href="#"><FaDribbble  /></a></li>
+                        </ul>
+                    </div>
+
+                    <div className="topbar-contact-info topbar-contact-details">
+                        <ul>
+                            <li><a href="#"><span>Contact:</span> +19 80979 25586</a></li>
+                        </ul>
+                    </div>
+                </div>              
+            </div>
         </div>
-      </div>
-    </nav>
+    </div>
+</div> */}
+        <Navbar.Brand href="#page-top" className="navbarCustom">
+          <img
+            src={LogoImage}
+            alt="Logo"
+            className="d-inline-block align-top"
+            style={{ height: "50px" }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#goals">Goals</Nav.Link>
+            <Nav.Link href="#about">About Us</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="#team">Team</Nav.Link>
+            <Nav.Link href="#contact">Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+    </>
   );
 };
 

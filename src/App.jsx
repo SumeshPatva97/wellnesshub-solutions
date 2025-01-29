@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SmoothScroll from "smooth-scroll";
 import ScrollToTop from "./components/ScrollToTop";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import "./CSS/Custom.css";
 import JsonData from "./data/data.json";
@@ -21,6 +22,7 @@ const PatientsCount = lazy(() => import("./components/patientsCount"));
 const Ordermedicine = lazy(() => import("./components/Forms/Ordermedicine"));
 const ImageCard = lazy(() => import("./components/ImageCard"));
 const Carousel = lazy(() => import("./components/Carousel"));
+const Qna = lazy(() => import("./components/QNA"));
 const OnlinePsychologicalCounselling = lazy(() =>
   import("./components/OnlinePsychologicalCounselling")
 );
@@ -52,12 +54,13 @@ const App = () => {
               <>
                 <Navigation />
                 <Header data={landingPageData.Header} />
-                <Goals data={landingPageData.Goals} />
+                {/* <Goals data={landingPageData.Goals} /> */}
                 <ImageCard />
                 <About data={landingPageData.About} />
                 <Services data={landingPageData.Services} />
                 <Ordermedicine />
                 <PatientsCount />
+                <Qna/>
                 <Team data={landingPageData.Team} />
                 <Contact data={landingPageData.Contact} />
               </>

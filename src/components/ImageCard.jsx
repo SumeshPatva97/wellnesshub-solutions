@@ -28,6 +28,7 @@ const ImageCard = () => {
   ];
 
   return (
+   
     <div className='container ' id="image-container">
        <div className="row">
         <div className="image-container ">
@@ -52,6 +53,30 @@ const ImageCard = () => {
         </div>
         </div>
     </div>
+
+
+    /*<div className="container mx-auto px-4 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        {data.map((item, index) => (
+          <div
+            key={item.id}
+            className={`relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 ${hoveredIndex === index ? 'scale-105' : 'scale-100'}`}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link to={item.link} className="block relative">
+              <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+                <div>
+                  <h3 className="text-white font-semibold text-lg">{item.title}</h3>
+                  {hoveredIndex === index && <p className="text-white text-sm mt-1">{item.description}</p>}
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>*/
   );
 };
 
