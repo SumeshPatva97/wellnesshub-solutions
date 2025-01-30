@@ -23,6 +23,64 @@
 body{
   font-size: 18px;
 }
+.section-title h1 {
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  cursor: none;
+}
+.section-title p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+.btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5ca9fb;
+  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+.btn-custom:hover{
+  border: 1px solid;
+}
+.navbar-nav> a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0;
+}
+
+.navbar-nav > a:hover:after {
+  width: 100%;
+}
+.export-category-content{
+  padding: 5px;
+  text-transform: capitalize;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--accent-color-two);
+}
+.navbar-brand{
+  height: 70px;
+  padding: 0px;
+}
 .navbarCustom{
   top: 4.7rem !important;
 }

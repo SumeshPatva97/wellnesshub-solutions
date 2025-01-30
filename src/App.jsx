@@ -59,7 +59,7 @@ const App = () => {
                 <About data={landingPageData.About} />
                 <Services data={landingPageData.Services} />
                 <Ordermedicine />
-                <PatientsCount />
+                <PatientsCount /> 
                 <Qna/>
                 <Team data={landingPageData.Team} />
                 <Contact data={landingPageData.Contact} />

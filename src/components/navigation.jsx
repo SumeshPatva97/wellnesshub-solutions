@@ -51,11 +51,11 @@ const Navigation = (props) => {
             src={LogoImage}
             alt="Logo"
             className="d-inline-block align-top"
-            style={{ height: "50px" }}
+            style={{ height: "70px" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav menu.navbar-default" >
           <Nav className="ms-auto">
             <Nav.Link href="#goals">Goals</Nav.Link>
             <Nav.Link href="#about">About Us</Nav.Link>
