@@ -34,7 +34,7 @@ const ImageCard = () => {
         <div className="image-container ">
           {data.map((item, index) => (
             <div
-              className={`image-card ${hoveredIndex === index ? 'hovered' : ''} col-xs-12 col-md-2 image-single`}
+              className={`image-card ${hoveredIndex === index ? 'hovered' : ''}  col-6 col-md-4 col-lg-2 image-single`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >

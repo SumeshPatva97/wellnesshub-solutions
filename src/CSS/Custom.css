@@ -203,6 +203,11 @@ body{
     padding-top: 100px;
     padding-bottom: 50px;
   }
+  
+  #ordermedicine .OrderImg ,#about .AboutImg {
+    animation: movebtns 3s ease-in-out infinite;
+    transition: all .5s ease-in-out;
+  }
 
   .sendBtn{
     margin-top: 2rem;
@@ -675,4 +680,58 @@ body{
       transform: translateY(0px);
     }
   }
+
+  @keyframes movebtns {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }
+  
   /* for Top Scroll  Button End */
+
+
+
+  ./* Media query for mobile devices */
+  @media (max-width: 768px) {
+ 
+    .hero-img {
+      height: 50vh;
+    }
+
+  }
+  
+  @media (max-width: 480px) {
+    .navbar>.container {
+      width: 50%;
+    }
+    .navbarCustom{
+      transform: translate(-12rem, 0px);
+    }
+    .navbarMenu{
+      transform: translate(2rem, 0px);
+    }
+    .ExploreBTN {
+      display: flex;
+      justify-self: center;
+    }
+    .section-title h1 {
+      margin-top: 10rem;
+      font-size: 35px;
+      font-weight: 600;
+    }
+     h1 {
+     font-size: 35px;
+    }
+    .hero-img {
+      height: 50vh;
+    }
+    .image-card {
+      margin-left: 1.5rem;
+      width: 37%;
+      height: 250px;
+    }
+  }
+  

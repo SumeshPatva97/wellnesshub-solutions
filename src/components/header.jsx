@@ -40,13 +40,13 @@ const Header = (props) => {
                 {/* <!-- Section Title Start --> */}
                 <div className="section-title">
                   <h3 className="wow fadeInUp">your health our priority</h3>
-                  <h1 className="text-anime-style-3" data-cursor="-opaque">Expert medical care you can rely on</h1>
+                  <h1 className="text-anime-style-3 " data-cursor="-opaque">Expert medical care you can rely on</h1>
                   <p className="wow fadeInUp" data-wow-delay="0.2s">Experience healthcare you can trust. Our dedicated team provides compassionate, high-quality care.</p>
                 </div>
                 {/* <!-- Section Title End --> */}
 
                 {/* <!-- Hero Buttons Start --> */}
-                <div className="hero-btn wow fadeInUp" data-wow-delay="0.4s">
+                <div className="hero-btn wow ExploreBTN fadeInUp" data-wow-delay="0.4s">
                   <a href="#services" className="btn btn-custom btn-lg page-scroll btn-default">Explore Our Services</a>
                 </div>
                 {/* <!-- Hero Buttons End --> */}
@@ -61,7 +61,7 @@ const Header = (props) => {
                 {/* <!-- Hero Img Start --> */}
                 <div className="hero-img">
                   <figure>
-                    <img src={HeroImg} alt="" />
+                    <img src={HeroImg} alt="" className="hero-img" />
                   </figure>
                 </div>
                 {/* <!-- Hero Img End --> */}

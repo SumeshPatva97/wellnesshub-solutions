@@ -46,7 +46,7 @@ const Navigation = (props) => {
         </div>
     </div>
 </div> */}
-        <Navbar.Brand href="#page-top" className="navbarCustom">
+        <Navbar.Brand href="#page-top" className="navbarCustom ">
           <img
             src={LogoImage}
             alt="Logo"
@@ -54,8 +54,8 @@ const Navigation = (props) => {
             style={{ height: "70px" }}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav menu.navbar-default" >
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbarMenu"/>
+        <Navbar.Collapse id="basic-navbar-nav menu.navbar-default" className="" >
           <Nav className="ms-auto">
             <Nav.Link href="#goals">Goals</Nav.Link>
             <Nav.Link href="#about">About Us</Nav.Link>
