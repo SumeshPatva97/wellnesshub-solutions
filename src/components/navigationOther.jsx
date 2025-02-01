@@ -1,58 +1,32 @@
 import React from "react";
-import  LogoImage  from "../image/logo.jpeg";
+import LogoImage from "../image/logo.jpeg";
 
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 
 const NavigationOther = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-          </button>
-          <div className="navLogo">
-          <a className="navbar-brand page-scroll navLogo" href="/">
-            <img src={LogoImage} alt="Logo" className="navLogoImage" />
-          </a>{" "}
-          </div>
-        </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
-          <ul className="nav navbar-nav navbar-right">
-            <li>
 
-              <a href="/" className="page-scroll">
-              Home
-              </a>
-            </li>
-            {/* <li>
-              <a href="#about" className="page-scroll">
-                About
-              </a>
-            </li> */}
-            <li>
-              <a href="#contact" className="page-scroll">
-                Contact
-              </a>
-            </li>
-           
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg" fixed="top">
+      <Container>
+        <Navbar.Brand href="/" className="navbarCustom">
+          <img
+            src={LogoImage}
+            alt="Logo"
+            className="d-inline-block align-top"
+            style={{ height: "70px" }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbarMenu" />
+        <Navbar.Collapse id="basic-navbar-nav menu.navbar-default" className="" >
+          <Nav className="ms-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="#contact">Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

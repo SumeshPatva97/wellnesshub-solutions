@@ -26,6 +26,7 @@ const Qna = lazy(() => import("./components/QNA"));
 const OnlinePsychologicalCounselling = lazy(() =>
   import("./components/OnlinePsychologicalCounselling")
 );
+const NotFound = lazy(() => import("./components/NotFound"));
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -54,7 +55,7 @@ const App = () => {
               <>
                 <Navigation />
                 <Header data={landingPageData.Header} />
-                {/* <Goals data={landingPageData.Goals} /> */}
+                <Goals data={landingPageData.Goals} />
                 <ImageCard />
                 <About data={landingPageData.About} />
                 <Services data={landingPageData.Services} />
@@ -77,6 +78,7 @@ const App = () => {
               </>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </Router>

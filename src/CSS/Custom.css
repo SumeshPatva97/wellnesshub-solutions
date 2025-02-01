@@ -8,6 +8,7 @@
   --accent-color			: #4753BF;
   --accent-color-two		: #506CD7;
   --white-color			: #FFFFFF;
+  --black-color			: #000000;
   --divider-color			: #55617124;
   --dark-divider-color	: #FFFFFF24;
   --error-color			: rgb(230, 87, 87);
@@ -20,9 +21,7 @@
 
 
 /* nav start */
-body{
-  font-size: 18px;
-}
+
 .section-title h1 {
   font-size: 68px;
   font-weight: 600;
@@ -273,8 +272,8 @@ body{
   
   .image-card .content {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 5rem;
+    left: 2rem;
     right: 10px;
     color: #ffffff;
     z-index: 2;
@@ -554,19 +553,89 @@ body{
 }
 
 
-.FAQ-left{
+.FAQ-left {
+  position: relative;
   border-radius: 26px;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   color: var(--accent-color);
   background-color: var(--white-color);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  overflow: hidden;
+  transition: color 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.FAQ-left:hover{
-  color: var(--white-color);
+
+/* Create animated background */
+.FAQ-left::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
   background-color: var(--accent-color);
+  transition: height 0.5s ease-in-out;
+  z-index: 0;
+  border-radius: 26px;
 }
+
+/* On hover, background color moves from bottom to top */
+.FAQ-left:hover::before {
+  height: 100%;
+}
+
+/* Ensure text and icons are on top */
+#FAQ,.accordion-header button{
+  font-size: 16px;
+}
+.FAQ-left * {
+  position: relative;
+  z-index: 1;
+  color: var(--black-color);
+}
+
+/* SVG and Image color change */
+.FAQ-left:hover svg {
+  color: white;
+  fill: white;
+}
+.FAQ-left:hover p{
+  color: var(--white-color);
+}
+
+.FAQ-left:hover img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.5s ease;
+}
+.Emergency24{
+  font-size: 3rem;
+}
+
 /************************************/
+
+
+#Online {
+  padding: 100px 0;
+}
+
+/* for Not Found Page start  */
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background-color: #f8f9fa; /* Optional: Light background */
+}
+
+.not-found-image {
+  max-width: 60%; /* Adjust size */
+  height: auto;
+}
+
+/* for Not Found Page End */
 
 
 

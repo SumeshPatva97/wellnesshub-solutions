@@ -25,7 +25,7 @@
       "text": "Fast, reliable medicine delivery at your doorstep. Affordable, convenient, and trusted for your health needs!"
     },
     {
-      "icon": "fa fa-group",
+      "icon": "/img/icons/health-insurance.png",
       "title": "Health & Motor Insurance",
       "text": "Comprehensive health and motor insurance plans. Affordable premiums, reliable coverage, and peace of mind guaranteed!"
     },
@@ -43,24 +43,14 @@
 
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
+      "img": "img/team/vargish.jpg",
+      "name": "Vargish Verma",
       "job": "Director"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/team/nilesh.jpg",
+      "name": "Nilesh Yadav",
+      "job": "Director"
     }
   ],
   "Contact": {

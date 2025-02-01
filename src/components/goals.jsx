@@ -3,7 +3,7 @@ import React from "react";
 const Goals = (props) => {
   return (
     <div id="goals" className="text-center">
-      <div className="container">
+      <div className="container d-flex flex-column">
         <div className="col-md-10 col-md-offset-1 section-title">
           <h2>Goals</h2>
         </div>

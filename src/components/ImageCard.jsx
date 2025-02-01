@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import  First  from "../image/card/1.png";
-import  Second  from "../image/card/2.png";
-import  Third  from "../image/card/3.png";
-import  Fourt  from "../image/card/4.png";
-import  Five  from "../image/card/5.jpeg";
-import  Six  from "../image/card/6.png";
+import  First  from "../image/card/about-img-1.jpg";
+import  Second  from "../image/card/our-approach-img.jpg";
+import  Third  from "../image/card/case-study-img-4.jpg";
+import  Fourt  from "../image/card/service-entry-img-1.jpg";
+import  Five  from "../image/card/gallery-4.jpg";
+import  Six  from "../image/card/gallery-5.jpg";
 
 const ImageCard = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

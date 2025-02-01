@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaPhone ,FaChevronDown } from "react-icons/fa6";
 
 import Accordion from 'react-bootstrap/Accordion';
-
+import  FAQPhone   from "../image/icon-faq-cta.svg";
 
 
 const QNA = () => {
@@ -24,11 +24,15 @@ const QNA = () => {
           <p className="text-gray-600 mt-4">
             Here to make your experience as seamless as possible—explore answers to common questions about our services, policies, and patient care.
           </p>
-          <div className="FAQ-left">
-            <FaPhone className="text-indigo-600" size={32} />
+          <div className="FAQ-left d-inline-flex justify-content-center align-items-center">
+            {/* <FaPhone className="text-indigo-600" size={32} /> */}
+            <div>
+            <img src={FAQPhone} alt="phone"/>
+
+            </div>
             <div>
               <p className="text-lg font-semibold text-gray-800">We always take care of your smile</p>
-              <p className="text-indigo-600 font-bold text-xl">24/7 Emergency</p>
+              <p className="text-indigo-600 font-bold text-xl Emergency24">24/7 Emergency</p>
               <p className="text-gray-700">659-888-589</p>
             </div>
           </div>

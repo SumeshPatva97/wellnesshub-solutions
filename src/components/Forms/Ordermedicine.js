@@ -278,7 +278,7 @@ const Ordermedicine = () => {
               <div class="mb-3 d-flex flex-column">
                 <label for="formFile" class="form-label">Upload Prescription</label>
               <div
-              className={`h-[80px] d-flex items-center border justify-center border-2 border-dashed border-[#BFBFBF] bg-white rounded-lg mt-2  defaultDrag_div`}
+              className={`h-[80px] d-flex items-center border justify-center border-2 border-dashed border-[#ccc] bg-white rounded-lg mt-2  defaultDrag_div`}
               onDragOver={handleDragOver}
               onDrop={handleDrop}
               onClick={openFileInput}
@@ -289,6 +289,7 @@ const Ordermedicine = () => {
                 padding: "10px",
                 backgroundColor: "#f9f9f9",
                 overflow: "hidden",
+                borderRadius:"0.375rem"
               }}
             >
               {formData.image && formData.image.base64 ? (
